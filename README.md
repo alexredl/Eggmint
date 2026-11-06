@@ -2,6 +2,10 @@
 
 **Project page: <https://github.com/alexredl/Eggmint>**
 
+<p align="center">
+  <img src="screenshots/eierbaer.png" alt="The pixel-art Eierbär" width="336">
+</p>
+
 A hand-made pixel-art **Eierbär** replaces the Mint look. It has curly hair, bear ears, your
 smile and mustache, a beaver nose, buck teeth, an egg in its paws and a beaver tail, and it sits
 in a stick nest.
