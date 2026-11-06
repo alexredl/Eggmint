@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=EggMint
+Description=Pixel-art Eierbaer boot splash with a mustache loading bar
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/eggmint
+ScriptFile=/usr/share/plymouth/themes/eggmint/eggmint.script

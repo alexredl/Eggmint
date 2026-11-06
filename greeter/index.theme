@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=EggMint
+Comment=Pixel Eierbaer login screen styling (based on Mint-Y-Aqua)
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=EggMint

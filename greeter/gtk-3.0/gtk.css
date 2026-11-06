@@ -1,0 +1,89 @@
+/* EggMint - login screen (slick-greeter) styling.
+   Builds on Mint-Y-Aqua and only recolours the greeter widgets in a chunky pixel style.
+   Plain CSS: anything GTK does not understand is ignored, nothing can break.
+   Selectors mirror Mint-Y's own "window.background.lightdm ..." rules so they win. */
+@import url("../../Mint-Y-Aqua/gtk-3.0/gtk.css");
+
+@define-color egg_cream  #fff6de;
+@define-color egg_shell  #fae9c8;
+@define-color fur_hi     #965c30;
+@define-color fur_mid    #693c1c;
+@define-color fur_lo     #462610;
+@define-color fur_ink    #2b1608;
+
+window.background.lightdm label {
+  color: @egg_cream;
+  text-shadow: 2px 2px @fur_ink;
+}
+
+window.background.lightdm entry {
+  background-image: none;
+  border-image: none;
+  background-color: @fur_lo;
+  color: @egg_cream;
+  caret-color: @egg_cream;
+  border: 3px solid @fur_ink;
+  border-radius: 0;
+  box-shadow: inset 0 -3px @fur_mid, inset 0 3px rgba(0, 0, 0, 0.35);
+  padding: 7px;
+}
+
+window.background.lightdm entry:focus {
+  border: 3px solid @egg_shell;
+  color: @egg_cream;
+}
+
+window.background.lightdm entry:selected,
+window.background.lightdm entry selection {
+  background-color: @egg_shell;
+  color: @fur_ink;
+}
+
+window.background.lightdm entry image {
+  color: @egg_cream;
+}
+
+window.background.lightdm button,
+window.background.lightdm button.toggle-button,
+window.background.lightdm button.flat.option-button {
+  border-radius: 0;
+  color: @egg_cream;
+}
+
+window.background.lightdm button:hover,
+window.background.lightdm button.toggle-button:hover,
+window.background.lightdm button.flat.option-button:hover {
+  border: 2px solid @fur_ink;
+  background-color: @fur_mid;
+}
+
+window.background.lightdm button:active,
+window.background.lightdm button.selected,
+window.background.lightdm button.toggle-button:active,
+window.background.lightdm button.toggle-button.selected,
+window.background.lightdm button.flat.option-button:active {
+  border: 2px solid @fur_ink;
+  background-color: @fur_hi;
+  color: @egg_cream;
+}
+
+window.background.lightdm menubar {
+  background-color: rgba(43, 22, 8, 0.75);
+  border-bottom: 3px solid @fur_ink;
+}
+
+window.background.lightdm menubar > menuitem label {
+  text-shadow: none;
+}
+
+window.background.lightdm menu,
+window.background.lightdm .menu {
+  background-color: @fur_lo;
+  border: 3px solid @fur_ink;
+  border-radius: 0;
+}
+
+window.background.lightdm menu menuitem:hover,
+window.background.lightdm .menu menuitem:hover {
+  background-color: @fur_hi;
+}
